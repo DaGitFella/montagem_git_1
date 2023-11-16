@@ -182,4 +182,12 @@ footer .neve {
   height: 52px;
   background-color: var(--neutras-neve-dark);
   margin-top: 51px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .neve img {
+  width: 42.596px;
+  height: 24.085px;
+  margin: 0;
 }
