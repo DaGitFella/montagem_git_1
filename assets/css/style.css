@@ -1,11 +1,15 @@
 /* classes gerais */
-::root {
+:root {
   --red_primary_color: #c11616;
   --ui-color-danger-light: #eb5151;
   --neutras-aco: #273644;
   --neutras-gray: #8d9aa6;
   --neutras-prata: #3c4b58;
   --ui-color-danger: #e62121;
+  --ui-color-primary: #2648a1;
+  --neutras-neve: #f9fafc;
+  --neutras-white: #ffffff;
+  --neutras-neve-dark: #eff2f7;
 }
 
 .container {
@@ -13,23 +17,48 @@
   margin: 0 auto;
 }
 
+.container-fluid {
+  width: 100%;
+}
+
 .container-texto {
   width: 60%;
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .card {
-  width: 17.5rem;
+  width: 280px;
   height: 16.25rem;
   border-radius: 5px;
   border: 1px solid #eb5151;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card-text {
-  color: var(--ui-color-danger-dark);
+  color: var(--red_primary_color);
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 140%;
+  width: 245px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 .card-title {
@@ -37,6 +66,9 @@
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 160%;
+  width: 245px;
+  text-align: left;
+  margin-top: 23px;
 }
 
 .card-publisher {
@@ -44,6 +76,12 @@
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 160%;
+}
+
+.card-description {
+  width: 245px;
+  text-align: left;
+  margin-bottom: 17px;
 }
 
 .card-publication {
@@ -57,7 +95,91 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', 'sans-serif' ;
+  font-family: "Inter", "sans-serif";
+  list-style: none;
 }
 
 /* Séries de Projetos */
+#series-posts {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 64px;
+  padding-bottom: 120px;
+  margin-bottom: 5px;
+}
+
+#series-posts header h2 {
+  color: var(--neutras-aco);
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 120%;
+  letter-spacing: 0.52px;
+  margin-bottom: 4px;
+}
+
+#series-posts header p {
+  color: var(--neutras-gray);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 160%;
+  margin-bottom: 35px;
+}
+
+#series-posts .card .bar {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 245px;
+  height: 2px;
+  background-color: var(--ui-color-danger-light);
+  margin-bottom: 9px;
+}
+
+#series-posts .coletanea {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+/* footer */
+footer {
+  background-color: var(--neutras-neve);
+}
+
+footer .container {
+  justify-content: space-between;
+  padding-top: 41px;
+}
+
+footer img {
+  width: 181.507px;
+  height: 56.156px;
+  margin-bottom: 30.84px;
+}
+
+footer .credits {
+  color: var(--red_primary_color);
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 160%;
+}
+
+footer .blog {
+  width: 111px;
+  text-align: right;
+  color: var(--neutras-prata, #3c4b58);
+  text-align: right;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0.8px;
+}
+
+footer .line {
+  text-decoration: underline;
+}
+
+footer .neve {
+  height: 52px;
+  background-color: var(--neutras-neve-dark);
+  margin-top: 51px;
+}
