@@ -1,6 +1,11 @@
 /* classes gerais */
-.container {
+.container-cards {
   width: 50%;
+  margin: 0 auto;
+}
+
+.container-texto {
+  width: 60%;
   margin: 0 auto;
 }
 
