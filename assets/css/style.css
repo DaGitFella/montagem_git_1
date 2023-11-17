@@ -55,5 +55,13 @@
 }
 
 * {
-  matgin
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
 }
