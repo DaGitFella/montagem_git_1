@@ -33,6 +33,10 @@ html {
   display: flex;
 }
 
+.align-center {
+  align-items: center;
+}
+
 .column {
   flex-direction: column;
 }
@@ -139,10 +143,11 @@ html {
 }
 
 .noticia .continue-lendo {
-  
+  gap: 36px;
 }
 
 .noticia .continue-lendo .gradient {
-  padding: 12px 4px 0 4px;
+  height: 32px;
+  padding-left: 12px;
   background: linear-gradient(90deg, #EFF0F2 0%, rgba(249, 250, 252, 0.00) 50.31%);
 }
