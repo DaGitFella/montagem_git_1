@@ -100,3 +100,34 @@ html {
   padding: 0;
   list-style: none;
 }
+
+/* Notícia */
+
+.noticia h1{
+  color: var(--neutras-aco, #273644);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 140%; /* 56px */
+}
+
+.noticia .autor {
+  padding: 8px 0 8px 33px;
+  background: #EFF2F7;
+  gap: 30px;
+}
+
+.noticia .autor p {
+  color: var(--neutras-prata, #3C4B58);
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+}
+
+.noticia .autor p .nome-autor {
+  color: var(--ui-color-danger-light, #EB5151);
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
+.noticia .autor p .texto-leve {
+  font-weight: 300;
+}
