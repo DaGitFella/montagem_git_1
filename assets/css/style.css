@@ -22,7 +22,7 @@
 }
 
 .container-texto {
-  width: 60%;
+  width: 55%;
   margin: 0 auto;
 }
 
@@ -36,6 +36,7 @@
 
 .cards {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -137,6 +138,10 @@
   width: 100%;
   justify-content: space-between;
   margin-top: 12px;
+}
+
+#series-posts .coletanea a {
+  color: var(--ui-color-primary);
 }
 
 /* footer */
