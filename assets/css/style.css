@@ -12,7 +12,7 @@
 }
 
 html {
-  font-family: "Inter", "sans-serif";
+  font-family: "Inter", sans-serif;
 }
 
 .container {
@@ -130,4 +130,19 @@ html {
 
 .noticia .autor p .texto-leve {
   font-weight: 300;
+}
+
+.noticia .texto-noticia {
+  color: #707C8C;
+  font-size: 21px;
+  line-height: 160%; /* 33.6px */
+}
+
+.noticia .continue-lendo {
+  
+}
+
+.noticia .continue-lendo .gradient {
+  padding: 12px 4px 0 4px;
+  background: linear-gradient(90deg, #EFF0F2 0%, rgba(249, 250, 252, 0.00) 50.31%);
 }
