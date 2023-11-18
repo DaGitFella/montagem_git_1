@@ -1,11 +1,18 @@
-/* classes gerais */
-::root {
+:root {
   --red_primary_color: #c11616;
   --ui-color-danger-light: #eb5151;
   --neutras-aco: #273644;
   --neutras-gray: #8d9aa6;
   --neutras-prata: #3c4b58;
   --ui-color-danger: #e62121;
+  --ui-color-primary: #2648a1;
+  --neutras-neve: #f9fafc;
+  --neutras-white: #ffffff;
+  --neutras-neve-dark: #eff2f7;
+}
+
+html {
+  font-family: "Inter", "sans-serif";
 }
 
 .container {
@@ -13,23 +20,48 @@
   margin: 0 auto;
 }
 
+.container-fluid {
+  width: 100%;
+}
+
 .container-texto {
   width: 60%;
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .card {
-  width: 17.5rem;
+  width: 280px;
   height: 16.25rem;
   border-radius: 5px;
   border: 1px solid #eb5151;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card-text {
-  color: var(--ui-color-danger-dark);
+  color: var(--red_primary_color);
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 140%;
+  width: 245px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 .card-title {
@@ -37,6 +69,9 @@
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 160%;
+  width: 245px;
+  text-align: left;
+  margin-top: 23px;
 }
 
 .card-publisher {
@@ -44,6 +79,12 @@
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 160%;
+}
+
+.card-description {
+  width: 245px;
+  text-align: left;
+  margin-bottom: 17px;
 }
 
 .card-publication {
@@ -56,50 +97,107 @@
 
 * {
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.flex {
-  display: flex;
-}
-
-.column {
-  flex-direction: column;
-}
+/* ----------------- > GALERIA < ----------------- */
 
 .galeria {
   justify-content: space-between;
-  font-family: inter, ;
+  margin: 90px 0 87px 0;
 }
 
 .fotos, .videos {
-  width: 586px;
+  gap: 9px;
+  width: 582px;
+  overflow: hidden;
 }
 
-/*----------------------*/
-
-.foto_inteira1 {
-  width: 237px;
+.galeria h2 {
+  color: var(--ui-color-danger-light);
+  font-size: 26px;
+  font-weight: 700;
 }
 
 .foto_inteira2 {
-  width: 223px;
   margin: 0 17px 0 0 ;
 }
 
-.foto_cortada {
-  width: 81px;
-}
+/* IMAGENS DA GALERIA + GRADIENTE */
 
-.video_inteiro {
-  width: 384px;
-}
-
-.video_cortado {
-  width: 181px;
+.foto1 {
+  background: linear-gradient(90deg, rgba(240, 62, 62, 0.41) 0%, rgba(240, 62, 62, 0.00) 100%), url("../img/foto1.svg");
+  width: 237px;
   height: 221px;
 }
 
-/*----------------------*/
+.foto2 {
+  background: url("../img/foto2.png");
+  width: 223px;
+  height: 221px;
+}
+
+.foto3 {
+  background: url("../img/foto3.svg");
+  width: 147px;
+  height: 221px;
+  flex-wrap: nowrap;
+}
+
+.foto3_gradiente {
+  position: absolute;
+  width: 81px;
+  height: 300px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, white 82.6%);
+}
+
+.video1 {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(34, 34, 34, 0.84) 30.52%, rgba(34, 34, 34, 0.31) 100%), url("../img/video1.svg");
+  width: 384px;
+  height: 221px;
+}
+
+.video2 {
+  background: url("../img/video2.svg");
+  width: 245px;
+  height: 221px;
+}
+
+.video2_gradiente {
+  position: absolute;
+  width: 181px;
+  height: 300px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 50%, white 90.6%);
+}
+
+/* BOTÃO PLAY DA GALERIA */
+
+.video1_play {
+  position: relative;
+}
+
+.borda_circular {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: white solid 2px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.play {
+  width: 23.874px;
+  height: 27.001px;
+  align-self: center;
+  margin-left: 3px;
+}
+
+/* FORMATAÇÕES DA LISTA */
 
 .lista {
   list-style: none;
@@ -107,17 +205,24 @@
   gap: 17px;
 }
 
-.relativo {
-  position: relative;
+.lista li {
+  gap: 21px;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--neutras-aco);
 }
 
-.absoluto {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: white solid 2px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+/* LINK PARA VER MAIS */
+
+.mais, .mais a {
+  align-items: end;
+  justify-content: flex-end;
+  gap: 20.5px;
+  color: var(--ui-color-danger);
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
 }
+
+/* ----------------- > . . . < ----------------- */
