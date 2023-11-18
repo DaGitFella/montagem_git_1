@@ -4,13 +4,6 @@
   margin: 0 auto;
 }
 
-.card {
-  width: 17.5rem;
-  height: 16.25rem;
-  border-radius: 5px;
-  border: 1px solid #eb5151;
-}
-
 ::root {
     --red_primary_color: #C11616;
     --ui-color-danger-light: #EB5151;
