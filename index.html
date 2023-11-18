@@ -1,70 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewpodevice-width, initial-scale=1.0" />
-    <title>Colaborative git montage</title>
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewpodevice-width, initial-scale=1.0" />
+  <title>Colaborative git montage</title>
 
-  </head>
-  <body>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
 <body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  </head>
+
+  <body>
     <!-- Séries de Projetos -->
     <section id="series-posts" class="container">
 
-      <section class="Galeria flex">
-        <div>
-          <h2></h2>
+      <section class="galeria flex">
+        <div class="fotos">
+          <h2>Galeria de fotos</h2>
 
-          <ul class="lista_fotos flex">
-            <li>
-              <img src="" alt="">
-              <p></p>
+          <ul class="lista_fotos lista flex">
+            <li class="foto_inteira1">
+              <img src="assets/img/foto1.svg" alt="">
+              <p>Carnaval de máscaras em Veneza consolida uma tradição histórica.</p>
             </li>
 
-            <li>
-              <img src="" alt="">
-              <p></p>
+            <li class="foto_inteira2">
+              <img src="assets/img/foto2.png" alt="">
+              <p>As mascáras deram o tom em diversos carnavais pelo mundo.</p>
             </li>
 
-            <li>
-              <img src="" alt="">
-              <p></p>
+            <li class="foto_cortada">
+              <img src="assets/img/foto3.svg" alt="">
+              <p>Em Olinda a alegria foi muita.</p>
             </li>
           </ul>
-          
+
+          <div class="mais flex">
+            <span>mais fotos</span>
+            <img src="assets/img/seta-vermelha.svg" alt="">
+          </div>
+
         </div>
 
-        <div>
-          <h2></h2>
+        <div class="videos">
+          <h2>& Vídeos</h2>
 
-          <ul class="lista_videos flex">
+          <ul class="lista_videos lista flex">
             <li>
-              <img src="" alt="">
-              <p></p>
+              <div class="relativo">
+                <img class="video_inteiro" src="assets/img/video1.svg" alt="">
+                <figure class="absoluto">
+                  <img src="assets/img/play.svg" alt="">
+                </figure>
+              </div>
+              <p>No Rio são as máscaras que deram o tom nesse carnaval de pandemia. Os foliões assumiram suas máscaras.
+              </p>
             </li>
 
             <li>
-              <img src="" alt="">
-              <p></p>
+              <img class="video_cortado" src="assets/img/video2.svg" alt="">
+              <p>A seu modo, na China, o carnaval manteve a tradição</p>
             </li>
           </ul>
 
+          <div class="mais flex">
+            <span>mais vídeos</span>
+            <img src="assets/img/seta-vermelha.svg" alt="">
+          </div>
         </div>
       </section>
 
     </section>
   </body>
+
 </html>

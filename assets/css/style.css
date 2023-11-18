@@ -65,3 +65,58 @@
 .column {
   flex-direction: column;
 }
+
+.galeria {
+  justify-content: space-between;
+}
+
+.fotos, .videos {
+  width: 586px;
+}
+
+/*----------------------*/
+
+.foto_inteira1 {
+  width: 237px;
+}
+
+.foto_inteira2 {
+  width: 223px;
+  margin: 0 17px 0 0 ;
+}
+
+.foto_cortada {
+  width: 81px;
+}
+
+.video_inteiro {
+  width: 384px;
+}
+
+.video_cortado {
+  width: 181px;
+  height: 221px;
+}
+
+/*----------------------*/
+
+.lista {
+  list-style: none;
+  padding: 0;
+  gap: 17px;
+}
+
+.relativo {
+  position: relative;
+}
+
+.absoluto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: white solid 2px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
