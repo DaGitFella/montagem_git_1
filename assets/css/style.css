@@ -11,6 +11,10 @@
   --neutras-neve-dark: #eff2f7;
 }
 
+html {
+  font-family: "Inter", "sans-serif";
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -94,6 +98,5 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Inter", "sans-serif";
   list-style: none;
 }
