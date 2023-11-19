@@ -18,4 +18,4 @@ Montagem colaborativa para prática didática
 
 
 ### Links extras
-[Sintaxe Básica para escrever Markdown]([https://eff.org](https://www.markdownguide.org/basic-syntax/)https://www.markdownguide.org/basic-syntax/)
+[Sintaxe Básica para escrever Markdown](https://www.markdownguide.org/basic-syntax/)
