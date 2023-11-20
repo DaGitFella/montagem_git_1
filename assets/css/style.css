@@ -47,7 +47,7 @@ html {
 
 .galeria {
   justify-content: space-between;
-  margin: 90px 0 87px 0;
+  margin: 90px 0 0 0;
 }
 
 .fotos, .videos {
@@ -60,6 +60,12 @@ html {
   color: var(--ui-color-danger-light);
   font-size: 26px;
   font-weight: 700;
+}
+
+.galeria h2 span {
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .foto_inteira2 {
@@ -165,6 +171,7 @@ html {
   font-size: 16px;
   text-decoration: none;
   cursor: pointer;
+  margin: 0 8px 0 0;
 }
 
 /* ----------------- > . . . < ----------------- */
