@@ -1,4 +1,11 @@
 /* classes gerais */
+
+
+html {
+  font-family: "Inter", "sans-serif";
+}
+
+
 .container {
   width: 50%;
   margin: 0 auto;
@@ -16,7 +23,6 @@
 
 .posts{
   color: var(--neutras-gray, #8D9AA6);
-font-family: Inter;
 font-size: 26px;
 font-style: normal;
 font-weight: 300;
@@ -30,24 +36,34 @@ border-bottom: 1px solid;
 }
 .textposts{
   color: var(--neutras-aco, #273644);
-  font-family: Inter;
   font-size: 21px;
   font-style: normal;
   font-weight: 700;
   margin-bottom: 10px;
   max-width: 700px;
+  line-height: 30px;
+  max-width: 780px;
   
 }
 
 .publi{
   border-bottom: solid 1px;
   padding-bottom: 20px;
+  display: flex;
+ 
 
 }
 
+.publi p{
+  margin: 0;
+  color: var(--neutras-neve, #F9FAFC);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  }
+
 small{
   color: var(--neutras-gray, #8D9AA6);
-  font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -56,7 +72,7 @@ small{
 
 strong{
   color: var(--neutras-prata, #3C4B58);
-  font-family: Inter;
+ 
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -67,7 +83,6 @@ strong{
 .noticias{
   color: var(--ui-color-primary, #2648A1);
   text-align: right;
-  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -77,4 +92,17 @@ strong{
 .noticialink{
   display: flex;
   justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.vector{
+  background-image: url(../img/svg.svg);
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 25px;
+  margin-left: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
