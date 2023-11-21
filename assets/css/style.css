@@ -6,87 +6,78 @@ html {
 }
 
 
-.container {
-  width: 50%;
+.ultimos_posts {
+  width: 787px;
   margin: 0 auto;
 }
 
-::root {
-    --red_primary_color: #C11616;
-    --ui-color-danger-light: #EB5151;
-    --neutras-aco: #273644;
-    --post_light: #8D9AA6;
-    --neutras-prata: #3C4B58;
-    --photo_colors: #E62121;
-
+:root {
+  --red_primary_color: #C11616;
+  --ui-color-danger-light: #EB5151;
+  --neutras-aco: #273644;
+  --post_light: #8D9AA6;
+  --neutras-prata: #3C4B58;
+  --photo_colors: #E62121;
+  --neutras-neve: #F9FAFC;
+  --neutras-gray: #8D9AA6;
+  --ui-color-primary: #2648A1;
 }
 
 .posts{
-  color: var(--neutras-gray, #8D9AA6);
-font-size: 26px;
-font-style: normal;
-font-weight: 300;
-border-bottom: 1px solid;
+  color: var(--neutras-gray);
+  font-size: 26px;
+  font-weight: 300;
+  padding: 0 0 9px 0;
+  border-bottom: 1px solid #D3DDE6;
 }
-
 
 .Tposts{
-  max-width: 787px;
   height: 107px;
 }
+
 .textposts{
-  color: var(--neutras-aco, #273644);
+  color: var(--neutras-aco);
   font-size: 21px;
-  font-style: normal;
   font-weight: 700;
-  margin-bottom: 10px;
-  max-width: 700px;
+  margin: 34px 0 7px 0;
   line-height: 30px;
-  max-width: 780px;
-  
 }
 
 .publi{
-  border-bottom: solid 1px;
-  padding-bottom: 20px;
+  border-bottom: solid 1px #D3DDE6;
+  padding-bottom: 35px;
+  gap: 28px;
   display: flex;
- 
-
+  align-items: flex-end;
 }
 
 .publi p{
-  margin: 0;
-  color: var(--neutras-neve, #F9FAFC);
+  margin: 0 0 5px 0;
+  color: var(--neutras-neve);
   font-size: 12px;
-  font-style: normal;
   font-weight: 700;
   }
 
 small{
-  color: var(--neutras-gray, #8D9AA6);
+  color: var(--neutras-gray);
   font-size: 14px;
-  font-style: normal;
   font-weight: 300;
-
 }
 
 strong{
-  color: var(--neutras-prata, #3C4B58);
- 
+  color: var(--neutras-prata);
   font-size: 14px;
-  font-style: normal;
   font-weight: 300;
-  line-height: 160%;
-  text-decoration-line: underline;
+  border-bottom: 1px solid var(--neutras-prata);
 }
 
 .noticias{
-  color: var(--ui-color-primary, #2648A1);
+  color: var(--ui-color-primary);
   text-align: right;
   font-size: 16px;
-  font-style: normal;
   font-weight: 300;
-
+  text-decoration: none;
+  border-bottom: 1px solid var(--ui-color-primary);
 }
 
 .noticialink{
@@ -100,9 +91,7 @@ strong{
   background-repeat: no-repeat;
   width: 32px;
   height: 25px;
-  margin-left: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
