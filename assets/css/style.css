@@ -16,9 +16,8 @@ html {
 }
 
 .container {
-  width: 80%;
+  width: 1178px;
   margin: 0 auto;
-  max-width: 1440px;
 }
 
 .container-fluid {
@@ -26,9 +25,9 @@ html {
 }
 
 .container-texto {
-  width: 55%;
+  width: 50%;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 787px;
 }
 
 .flex {
@@ -42,8 +41,6 @@ html {
 .cards {
   display: flex;
   gap: 27px;
-  flex-wrap: wrap;
-  gap: 20px;
 }
 
 .card {
@@ -353,7 +350,6 @@ nav a {
 }
 
 /* ----------------- > GALERIA < ----------------- */
-
 .galeria {
   gap: 18px;
 }
@@ -395,7 +391,7 @@ nav a {
 }
 
 .foto3 {
-  background: url("../img/foto3.svg");
+  background: url("../img/foto3.svg") no-repeat;
   width: 147px;
   height: 221px;
   flex-wrap: nowrap;
@@ -415,7 +411,7 @@ nav a {
 }
 
 .video2 {
-  background: url("../img/video2.svg");
+  background: url("../img/video2.svg") no-repeat;
   width: 245px;
   height: 221px;
 }
@@ -483,9 +479,9 @@ nav a {
 }
 
 /* últimos posts */
+
 .ultimos_posts {
-  width: 787px;
-  margin: 120px auto 0 auto;
+  margin-top: 88px;
 }
 
 .posts{
