@@ -197,6 +197,11 @@ nav a, nav li {
   text-transform: uppercase;
 }
 
+nav a {
+  text-decoration: none;
+  border-bottom: 1px solid var(--neutras-white, #FFF);
+}
+
 /* --- Notícia --- */
 
 /* Fim de 'Classes de reuso' */
@@ -295,8 +300,6 @@ nav a, nav li {
 
 .principais-categorias .categorias {
   margin-top: 4px;
-  gap: 17px;
-  justify-content: space-between;
 }
 
 .principais-categorias .categoria {
@@ -304,9 +307,14 @@ nav a, nav li {
   display: inline-flex;
   align-items: flex-start;
   gap: 10px;
-
+  margin-right: 18px;
+  flex-shrink: 0;
   padding: 4px 16px;
   border: 1px solid var(--ui-color-danger-light, #EB5151);
+}
+
+.principais-categorias .categoria:last-child {
+  margin-right: 0;
 }
 
 .principais-categorias .categoria span {
