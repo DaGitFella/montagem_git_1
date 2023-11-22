@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewpodevice-width, initial-scale=1.0" />
     <title>Colaborative git montage</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- fontes do prijeto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css do projeto -->
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
+
+    <!-- header -->
     <header class="flex align-center">
       <div class="container flex align-center">
         <div class="logo flex align-center">
@@ -36,6 +45,275 @@
         </div>
       </div>
     </header>
+
+    <!-- noticias e categorias -->
+    <section class="noticia-e-categorias">
+      <div class="container-texto flex column">
+        <figure class="aspas">
+          <img src="assets/img/aspas.svg" alt="">
+        </figure>
+
+        <div class="noticia">
+          <h1>Simão celerado: do nascimento à morte da democracia (VI) – o caso Alan
+            Gideon</h1>
+          <article class="autor flex">
+            <p>por <strong class="nome-autor">Sérgio Trindade</strong> <span class="texto-leve font-weight-300">foi publicado em 16.out.2018</span></p>
+            <article class="comentarios flex column align-center">
+              <div class="qtd-comentarios line-height-160 font-weight-700">10+</div>
+            </article>
+          </article>
+          <p class="texto-noticia line-height-160">Filho de Jacinto de Souza Rojão, um dos mais
+            queridos funcionários da Escola Federal de Educação, Ciência, Filosofia
+            e Tecnologia do Rio das Mortes (EFECFTRM), Alan Gideon assumiu vaga de
+            concurso, como administrador...</p>
+        </div>
+        <article class="continue-lendo flex">
+          <div class="gradient flex align-center"><em>Continue lendo...</em></div>
+          <img src="assets/img/seta-cinza.svg" alt class="seta-cinza">
+        </article>
+        <div class="principais-categorias flex column">
+          <div class="linha-divisoria"></div>
+          <h2 class="font-weight-300 line-height-160">Principais categorias</h2>
+          <div class="categorias wrap flex">
+            <div class="categoria">
+              <span class="font-weight-300 line-height-160">CONTOS E CRÔNICAS</span>
+              <div class="n-categoria-container flex align-center justify-center">
+                <div class="n-categoria font-weight-700">10</div>
+              </div>
+            </div>
+            <div class="categoria">
+              <span class="font-weight-300 line-height-160">CANGAÇO</span>
+              <div class="n-categoria-container flex align-center justify-center">
+                <div class="n-categoria font-weight-700">10</div>
+              </div>
+            </div>
+            <div class="categoria">
+              <span class="font-weight-300 line-height-160">BRASIL</span>
+              <div class="n-categoria-container flex align-center justify-center">
+                <div class="n-categoria destaque font-weight-700">99</div>
+              </div>
+            </div>
+            <div class="categoria">
+              <span class="font-weight-300 line-height-160">ECONOMIA</span>
+              <div class="n-categoria-container flex align-center justify-center">
+                <div class="n-categoria font-weight-700">23</div>
+              </div>
+            </div>
+            <div class="categoria">
+              <span class="font-weight-300 line-height-160">HISTÓRIA DO BRASIL</span>
+              <div class="n-categoria-container flex align-center justify-center">
+                <div class="n-categoria font-weight-700">54</div>
+              </div>
+            </div>
+          </div>
+          <a class="font-weight-300 line-height-160" href="#">Ver todas as categorias</a>
+      </div>
+    </section>
+
+    <!-- Séries de Projetos -->
+    <section id="series-posts" class="container">
+
+      <!-- Galeria -->
+      <section class="galeria flex">
+        <div class="fotos flex column">
+          <h2>Galeria de fotos</h2>
+
+          <ul class="lista_fotos lista flex">
+            <li class="foto_inteira1 flex column">
+              <div class="foto1"></div>
+              <p>Carnaval de máscaras em Veneza consolida uma tradição histórica.</p>
+            </li>
+
+            <li class="foto_inteira2 flex column">
+              <div class="foto2"></div>
+              <p>As mascáras deram o tom em diversos carnavais pelo mundo.</p>
+            </li>
+
+            <li class="foto_cortada flex column">
+              <div class="foto3_gradiente"></div>
+              <div class="foto3"></div>
+              <p>Em Olinda a alegria foi muita.</p>
+            </li>
+          </ul>
+
+          <div class="mais flex">
+            <a href="#">mais fotos</a>
+            <img src="assets/img/seta-vermelha.svg" alt="">
+          </div>
+
+        </div>
+
+        <div class="videos flex column">
+          <h2><span>&</span> Vídeos</h2>
+
+          <ul class="lista_videos lista flex">
+            <li class="flex column">
+              <div class="video1_play">
+                <div class="video1"></div>
+                <figure class="borda_circular flex"><img class="play flex" src="assets/img/play.svg" alt=""></figure>
+              </div>
+              <p>No Rio são as máscaras que deram o tom nesse carnaval de pandemia. Os foliões assumiram suas máscaras.
+              </p>
+            </li>
+
+            <li class="flex column">
+              <div class="video2_gradiente"></div>
+              <div class="video2"></div>
+              <p>A seu modo, na China, o carnaval manteve a tradição</p>
+            </li>
+          </ul>
+
+          <div class="mais flex">
+            <a href="#">mais vídeos</a>
+            <img src="assets/img/seta-vermelha.svg" alt="">
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <div class="ultimos_posts">
+      <h2 class="posts">Últimos posts</h2>
+      <div>
+          <p class="textposts">Filho de Jacinto de Souza Rojão, um dos mais queridos funcionários da Escola Federal de
+              Educação, Ciência, Filosofia e Tecnologia do Rio das Mortes</p>
+
+          <div class="publi">
+              <small>Publicado em 26.out.2020 - em <strong>Crônicas e Contos</strong></small>
+              <div class="vector"><p>10+</p></div>
+              
+          </div>
+      </div>
+
+      <div>
+          <p class="textposts">Filho de Jacinto de Souza Rojão, um dos mais queridos funcionários da Escola Federal de
+              Educação, Ciência, Filosofia e Tecnologia do Rio das Mortes</p>
+
+          <div class="publi">
+              <small>Publicado em 26.out.2020 - em <strong>Crônicas e Contos</strong></small>
+              <div class="vector"><p>10+</p></div>
+          </div>
+      </div>
+      <div>
+          <p class="textposts">Filho de Jacinto de Souza Rojão, um dos mais queridos funcionários da Escola Federal de
+              Educação, Ciência, Filosofia e Tecnologia do Rio das Mortes</p>
+
+          <div class="publi">
+              <small>Publicado em 26.out.2020 - em <strong>Crônicas e Contos</strong></small>
+              <div class="vector"><p>10+</p></div>
+          </div>
+      </div>
+      <div>
+          <p class="textposts">Filho de Jacinto de Souza Rojão, um dos mais queridos funcionários da Escola Federal de
+              Educação, Ciência, Filosofia e Tecnologia do Rio das Mortes</p>
+
+          <div class="publi">
+              <small>Publicado em 26.out.2020 - em <strong>Crônicas e Contos</strong></small>
+              <div class="vector"><p>10+</p></div>
+          </div>
+      </div>
+      <div class="noticialink"> <a href="#" class="noticias">Ver todas as notícias</a></div>
+  </div>
+
+   <!-- Séries de Projetos -->
+   <section id="serie-posts">
+    <div class="container">
+        <section class="title_epics">
+          <h2><strong>SÉRIES DE POSTS</strong></h2>
+          <p>
+            Você pode acompanhar as histórias que são publicadas em formato de
+            coletâneas.
+          </p>
+        </section>
+        <ul class="cards">
+          <li class="card">
+            <div>
+              <h3 class="card-title">
+                Última publicação - <strong>21.jun.2021</strong>
+              </h3>
+              <p class="card-text">
+                A Escola e a estupidez – como um falso, um atoleimado e uma gama de
+                outras coisas fizeram da futrica método
+              </p>
+            </div>
+            <div>
+              <div class="bar"></div>
+              <p class="card-description">
+                <span class="card-publisher">escola da estupidez</span>
+                <span class="card-publication">(10 publicações)</span>
+              </p>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <h3 class="card-title">
+                Última publicação - <strong>21.jun.2021</strong>
+              </h3>
+              <p class="card-text">Entrevista com Luiz Alves de Melo</p>
+            </div>
+            <div>
+              <div class="bar"></div>
+              <p class="card-description">
+                <span class="card-publisher">nomeação</span>
+                <span class="card-publication">(2 publicações)</span>
+              </p>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <h3 class="card-title">
+                Última publicação - <strong>20.ago.2020</strong>
+              </h3>
+              <p class="card-text">A tabelinha Almério-Amador</p>
+            </div>
+            <div>
+              <div class="bar"></div>
+              <p class="card-description">
+                <span class="card-publisher">consenso do bem</span>
+                <span class="card-publication">(2 publicações)</span>
+              </p>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <h3 class="card-title">
+                Última publicação - <strong>20.ago.2020</strong>
+              </h3>
+              <p class="card-text">
+                A zezoficação do Protagonista (ou Quando Zorba derramou lágrimas)
+              </p>
+            </div>
+            <div>
+              <div class="bar"></div>
+              <p class="card-description">
+                <span class="card-publisher">consenso do bem</span>
+                <span class="card-publication">(2 publicações)</span>
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="coletanea flex">
+          <a href="">Acessar todas as coletâneas</a>
+          <img src="assets/img/seta-vermelha.svg" alt="" />
+        </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="container flex">
+      <div class="flex column">
+        <img src="assets/img/historia.svg" alt="" />
+        <p class="credits">por <strong>Sérgio Trindade</strong></p>
+      </div>
+      <p class="blog">
+          <span class="line">O BLOG</span> DOWNLOADS VÍDEOS FOTOS
+      </p>
+    </div>
+    <div class="neve contaienr-fluid flex">
+      <img src="assets/img/awe-icon.svg" alt="">
+    </div>
+  </footer> 
 
   </body>
 </html>
