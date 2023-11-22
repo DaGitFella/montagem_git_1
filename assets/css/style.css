@@ -13,6 +13,7 @@
 
 html {
   font-family: "Inter", "sans-serif";
+  font-family: 'Inter', sans-serif;
 }
 
 .container {
@@ -35,6 +36,10 @@ html {
 
 .column {
   flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
 }
 
 .cards {
@@ -99,4 +104,72 @@ html {
   margin: 0;
   padding: 0;
   list-style: none;
+  box-sizing: border-box;
 }
+
+/* --- Header --- */
+
+header {
+  background: var(--red_primary_color);
+  padding: 22px;
+  color: var(--neutras-white);
+}
+
+header .container {
+  justify-content: space-between;
+}
+
+.logo {
+  gap: 28px;
+}
+
+.logo img {
+  margin-left: 12px;
+}
+
+.logo .autor {
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 160%; /* 33.6px */
+}
+
+.logo .linha {
+  width: 60px;
+  height: 1px;
+  transform: rotate(90deg);
+  background: var(--neutras-white, #FFF);
+}
+
+.busca-e-menu {
+  gap: 36px;
+}
+
+.busca-e-menu .busca {
+  gap: 8px;
+}
+
+.busca-e-menu .busca input {
+  width: 282px;
+  color: var(--neutras-white);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--neutras-white);
+}
+
+.busca-e-menu .busca input:focus {
+  outline: none;
+}
+
+nav ul {
+  gap: 16px;
+}
+
+nav a, nav li {
+  color: var(--neutras-white, #FFF);
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+  text-transform: uppercase;
+}
+
+/* --- Fim do Header --- */
