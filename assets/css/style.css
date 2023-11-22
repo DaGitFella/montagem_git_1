@@ -18,7 +18,7 @@ html {
 .container {
   width: 80%;
   margin: 0 auto;
-  max-width: 1540px;
+  max-width: 1440px;
 }
 
 .container-fluid {
@@ -28,7 +28,7 @@ html {
 .container-texto {
   width: 55%;
   margin: 0 auto;
-  max-width: 1540px;
+  max-width: 1440px;
 }
 
 .flex {
@@ -41,7 +41,7 @@ html {
 
 .cards {
   display: flex;
-  justify-content: space-between;
+  gap: 27px;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -347,8 +347,7 @@ nav a, nav li {
 /* ----------------- > GALERIA < ----------------- */
 
 .galeria {
-  justify-content: space-between;
-  margin: 90px 0 0 0;
+  gap: 18px;
 }
 
 .fotos, .videos {
