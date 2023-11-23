@@ -41,6 +41,7 @@ html {
 .cards {
   display: flex;
   gap: 27px;
+  overflow-x: hidden;
 }
 
 .card {
@@ -249,7 +250,7 @@ nav a {
 .noticia .autor .comentarios {
   background: url("../img/balao-comentario.svg");
   width: 32px;
-  height: 24px;
+  height: 25px;
 }
 
 .noticia .autor .comentarios .qtd-comentarios {
@@ -352,6 +353,7 @@ nav a {
 /* ----------------- > GALERIA < ----------------- */
 .galeria {
   gap: 18px;
+  margin-top: 90px;
 }
 
 .fotos, .videos {
