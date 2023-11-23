@@ -18,5 +18,7 @@ Montagem colaborativa para prática didática
 
 
 ### Links extras
-[Sintaxe Básica para escrever Markdown](https://www.markdownguide.org/basic-syntax/)
-[Arquivo de Rabiscoframe](https://www.teses.usp.br/teses/disponiveis/16/16134/tde-20052013-112226/publico/tese_gilbarros_original.pdf)
+- [Sintaxe Básica para escrever Markdown](https://www.markdownguide.org/basic-syntax/)
+- [Arquivo de Rabiscoframe - Tese](https://www.teses.usp.br/teses/disponiveis/16/16134/tde-20052013-112226/publico/tese_gilbarros_original.pdf)
+- [Arquivo de Rabiscoframe - Apostila](https://www.caelum.com.br/apostila/apostila-ux-usabilidade-mobile-web.pdf)
+
